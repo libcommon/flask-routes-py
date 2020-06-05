@@ -45,6 +45,10 @@ setuptools.setup(
         "Releases": "PACKAGE_CODE_URL/releases"
     },
     packages=setuptools.find_packages(),
+    install_requires=["Flask"],
+    extras_require={
+        "reqparser": ["lc-flask-reqparser"],
+    },
     classifiers=[
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
