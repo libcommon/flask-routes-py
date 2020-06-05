@@ -48,6 +48,8 @@ setuptools.setup(
     install_requires=["Flask"],
     extras_require={
         "reqparser": ["lc-flask-reqparser"],
+        "registry": ["lc-registry"],
+        "all": ["lc-flask-reqparser", "lc-registry"],
     },
     classifiers=[
         "Intended Audience :: Developers",
