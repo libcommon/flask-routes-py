@@ -35,6 +35,12 @@ try:
         __slots__ = ()
 
         @classmethod
+        def _add_class(cls, name: str, new_cls: Type[Any]) -> None:
+            # Ensure ROUTE_MAP is defined and non-None on new_cls
+            if hasattr(new_cls, "ROUTE_MAP") and new_cls.ROUTE_MAP:
+                super()._add_class(name, new_cls)
+
+        @classmethod
         def register_routes(cls, app: flask.Flask) -> None:
             """
             Args:
