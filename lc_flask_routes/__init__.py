@@ -21,7 +21,7 @@
 ## OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ## SOFTWARE.
 
-from .route import BaseRouteMixin
+from .route import BaseRouteMixin, RouteResponse, WerkzeugLocalProxy
 try:
     from .route import BaseRouteWithParserMixin
 except (ImportError, ModuleNotFoundError):
