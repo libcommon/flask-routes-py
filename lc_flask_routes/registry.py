@@ -82,3 +82,7 @@ try:
 
 except (ImportError, ModuleNotFoundError):
     pass
+
+
+if os.environ.get("ENVIRONMENT") == "TEST":
+    pass
