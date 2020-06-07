@@ -80,5 +80,3 @@ try:
                         # Register route(s) with app
                         route_cls.register_route(app)
 
-except (ImportError, ModuleNotFoundError):
-    pass
