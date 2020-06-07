@@ -32,17 +32,17 @@ else:
 
 
 setuptools.setup(
-    name="PACKAGE_NAME",
-    version="PACKAGE_VERSION",
+    name="lc_flask_routes",
+    version="0.1.0",
     author="libcommon",
     author_email="libcommon@protonmail.com",
-    description="PACKAGE_SHORT_DESCRIPTION",
+    description="",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="PACKAGE_CODE_URL",
+    url="https://github.com/libcommon/flask-routes-py",
     project_urls={
-        "Issue Tracker": "PACKAGE_CODE_URL/issues",
-        "Releases": "PACKAGE_CODE_URL/releases"
+        "Issue Tracker": "https://github.com/libcommon/flask-routes-py/issues",
+        "Releases": "https://github.com/libcommon/flask-routes-py/releases"
     },
     packages=setuptools.find_packages(),
     install_requires=["Flask"],
@@ -57,5 +57,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=PACKAGE_MIN_PYTHON_VERSION',
+    python_requires='>=3.6',
 )

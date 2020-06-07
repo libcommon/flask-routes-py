@@ -31,5 +31,3 @@ try:
 except (ImportError, ModuleNotFoundError):
     pass
 
-
-__author__ = "libcommon"
